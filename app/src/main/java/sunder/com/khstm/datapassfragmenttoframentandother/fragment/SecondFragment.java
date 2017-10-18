@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import sunder.com.khstm.datapassfragmenttoframentandother.MainActivity;
 import sunder.com.khstm.datapassfragmenttoframentandother.R;
 import sunder.com.khstm.datapassfragmenttoframentandother.SecondActivity;
 
@@ -34,6 +35,16 @@ public class SecondFragment extends Fragment {
         //    String mParam1 = getArguments().getString("data");
         String data= activity.getIntent().getExtras().getString("Regular_visitor");
         Toast.makeText(getActivity(), ":" + data, Toast.LENGTH_SHORT).show();
+
+
+
+
+
+        //fetch activiy data same activity with fragment
+
+        SecondActivity activity1 = (SecondActivity) getActivity();
+        String str=activity1.getMyData();
+        Toast.makeText(getActivity(), "Sunder:" + str, Toast.LENGTH_SHORT).show();
 
     }
 }
