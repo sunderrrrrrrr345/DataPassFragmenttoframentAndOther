@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
-String message;
+String message,message1="2";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,20 @@ String message;
         Toast.makeText(this, "Hello:"+message, Toast.LENGTH_SHORT).show();
 
 
-        //read how to send data activity to fragment on javatpoint
+        //read how to send data same activity to fragment on javatpoint
+
+
+
+
+
 
     }
+
+    //another way fetch data activity to fragment
+
+    public String getMyData() {
+        return message1;
+    }
+
+    //some way are interface and sharedPrefrence
 }
